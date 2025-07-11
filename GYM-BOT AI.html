@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymGenius AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins :wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="GYM-BOT.css">
+</head>
+<body>
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
+    <div class="chat-container">
+        <div class="chat-header">
+            Gym Genius AI
+            <button id="theme-toggle" title="Toggle theme">
+                <span id="theme-icon">🔅</span>
+            </button>
+        </div>
+        <div style="text-align: center; color:red;"><h4>Bonus 🏋🏻 Exercises</42></div>
+        <div class="quick-actions" id="quick-actions">
+            <button class="quick-action-btn" data-query="full body workout">Full Body</button>
+            <!-- <button class="quick-action-btn" data-query="leg exercises">Leg Day</button> -->
+            <!-- <button class="quick-action-btn" data-query="arm exercises">Arm Blast</button> -->
+            <!-- <button class="quick-action-btn" data-query="shoulder exercises">Shoulders</button> -->
+            <!-- <button class="quick-action-btn" data-query="chest exercises">Chest Workout</button> -->
+            <!-- <button class="quick-action-btn" data-query="back exercises">Back Routine</button> -->
+            <!-- <button class="quick-action-btn" data-query="abs exercises">Core Work</button> -->
+            <button class="quick-action-btn" data-query="beginner routine">Beginner Plan</button>
+            <!-- <button class="quick-action-btn" data-query="biceps exercises">Biceps</button> -->
+            <!-- <button class="quick-action-btn" data-query="triceps exercises">Triceps</button> -->
+            <button class="quick-action-btn" data-query="bro-split routine">Bro-Split</button>
+            <button class="quick-action-btn" data-query="intermediate">Intermediate</button>
+            <button class="quick-action-btn" data-query="cardio">Cardio</button>
+            
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                💪Yeah Buddy! Light Weight Baby... <br> I'm Ganesh your personal training Coach. Ask me about exercises, routines, or form tips for any muscle group. Try "leg exercises" or "how to bench properly"!
+            </div>
+            <div class="typing-indicator" id="typing-indicator">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="message-input" placeholder="Feel free to ask!" autocomplete="off">
+            <button id="send-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js @2.0.0/particles.min.js"></script>
+    <script src="GYM-BOT.js"></script>
+</body>
+</html>
