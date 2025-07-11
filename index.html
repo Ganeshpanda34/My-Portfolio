@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ganesh | Frontend Developer</title>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <div class="logo" id="logo-typing">Ganesh</div>
+                <ul class="nav-links">
+                    <li><a href="#home" aria-label="Go to Home Section">Home</a></li>
+                    <li><a href="#about" aria-label="Go to About Section">About</a></li>
+                    <li><a href="#skills" aria-label="Go to Skills Section">Skills</a></li>
+                     <li><a href="#education" aria-label="Go to Education Section">Education</a></li>
+                    <li><a href="#projects" aria-label="Go to Projects Section">Projects</a></li>
+                    <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
+                </ul>
+                <div class="theme-toggle-container">
+                    <button class="toggle-btn" title="Theme Toggle" id="theme-toggle-btn">
+                        <!-- Professional sun/moon SVG icon -->
+                        <svg id="theme-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2"></path>
+                            <path d="M12 21v2"></path>
+                            <path d="M4.22 4.22l1.42 1.42"></path>
+                            <path d="M18.36 18.36l1.42 1.42"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M21 12h2"></path>
+                            <path d="M4.22 19.78l1.42-1.42"></path>
+                            <path d="M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                    </button>
+                    <div class="theme-toggle-dropdown">
+                        <button class="light-mode-btn">Light Mode</button>
+                        <button class="dark-mode-btn">Dark Mode</button>
+                    </div>
+                </div>
+                <div class="mobile-menu" id="hamburger-menu" aria-label="Open navigation menu" aria-expanded="false" tabindex="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" data-aos="fade-up">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" style="position: relative; z-index: 1;">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Hi, I'm Ganesh Prasad Panda</h1>
+                    <h2>I'm a <span class="typing-text"></span></h2>
+                    <p>From vision to launch, I lead web projects that blend creativity with engineering excellence. Let’s collaborate to turn your boldest ideas into high-impact digital realities.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn">Let’s connect</a>
+                        <a href="#about" class="btn btn-outline">Profile Summary</a>
+                    </div>
+                </div>
+                <div class="hero-img" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./hero-image.jpg" >
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Who Am I?</h3>
+                    <p>I am a passionate Frontend Developer with a strong foundation in web technologies. With 1 year of experience, I specialize in creating responsive, accessible, and performance-optimized web applications.</p>
+                    <p>My journey in web development started with a curiosity about how websites work, which led me to pursue a degree in 'BSC-ITM'. Since then, I've worked on various projects, continuously improving my skills and staying updated with the latest industry trends.</p>
+                    <p>When I'm not coding, I explore cutting-edge AI tools and industry innovations to stay ahead of the tech curve, I prioritize fitness and physical training or enjoy listening to music & podcasts.</p>
+                    <a href="./Ganesh_Developer_Resume.pdf" download class="btn resume-btn">Download Resume <i class="fas fa-download"></i></a>
+                </div>
+                <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./ROY.png" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">HTML</h3>
+                    <p class="skill-desc">Advanced knowledge of semantic HTML and accessibility practices.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-title">CSS</h3>
+                    <p class="skill-desc">Proficient in CSS, including flexbox, grid, and animations.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                      <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <p class="skill-desc">Intermediate knowledge of modern JavaScript and frameworks.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3 class="skill-title">Python</h3>
+                    <p class="skill-desc">Basic knowledge of Python programming, including syntax, data structures, and scripting.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+
+ <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="skill-icon">
+            <i class="fa-sharp-duotone fa-solid fa-fire"></i>
+        </div>
+        <h3 class="skill-title">Tools & Platforms</h3>
+        <p class="skill-desc">VS Code, Deepseek, Claude, Google AI Studio & Netlify. </p>
+        <div class="skill-progress">
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <span class="skill-percent">80%</span>
+    </div>
+
+       <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="skill-icon">
+           <i class="fa-duotone fa-solid fa-user-group"></i>
+        </div>
+        <h3 class="skill-title">Soft Skills</h3>
+        <p class="skill-desc">Communication, Teamwork, Problem Solving, Adaptability, Time Management, Creativity.</p>
+        <div class="skill-progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+        </div>
+        <span class="skill-percent">85%</span>
+    </div>
+</div>
+<!-- =============================== -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Add the Education section after Skills and before Projects/Contact -->
+<section id="education" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+        <div class="edu-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+            <div class="edu-card" data-aos="zoom-in-up" data-aos-delay="100" style="background: var(--card-bg); border-radius: var(--border-radius); box-shadow: var(--shadow); padding: 28px 20px; text-align: center;">
+                <div style="font-size:2rem; margin-bottom:8px;  " ><i class="fas fa-graduation-cap" style="color:var(--primary-color);"></i></div>
+                <h3>B.Sc. ITM      </h3>
+                <span class="edu-institute" style="display:block; color:var(--primary-color); margin-bottom:6px;">Bhadrak Autonomous College</span>
+                <span class="edu-detail" style="color:var(--text-color);"> CGPA of 8.01, reflecting academic excellence in the CHSE curriculum</span>
+            </div>
+            <div class="edu-card" data-aos="zoom-in-up" data-aos-delay="250" style="background: var(--card-bg); border-radius: var(--border-radius); box-shadow: var(--shadow); padding: 28px 20px; text-align: center;">
+                <div style="font-size:2rem; margin-bottom:8px;"><i class="fas fa-university" style="color:var(--primary-color);"></i></div>
+                <h3>Intermediate </h3>
+                <span class="edu-institute" style="display:block; color:var(--primary-color); margin-bottom:6px;">Charampa Mahavidyalaya College</span>
+                <span class="edu-detail" style="color:var(--text-color);">60%, reflecting academic excellence in the CHSE curriculum </span>
+            </div>
+            <div class="edu-card" data-aos="zoom-in-up" data-aos-delay="400" style="background: var(--card-bg); border-radius: var(--border-radius); box-shadow: var(--shadow); padding: 28px 20px; text-align: center;">
+                <div style="font-size:2rem; margin-bottom:8px;"><i class="fas fa-school" style="color:var(--primary-color);"></i></div>
+                <h3>Matriculation </h3>
+                <span class="edu-institute" style="display:block; color:var(--primary-color); margin-bottom:6px;">Carmel School</span>
+                <span class="edu-detail" style="color:var(--text-color);"> 77%, reflecting academic excellence in the ICSE curriculum.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- ======================================= -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-container">
+
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <img src="./PROJECT- 1 PHOTO.png" alt="Project 1" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-desc">A responsive, modern web portfolio built with HTML, CSS, and JavaScript to highlight my frontend development expertise and project work.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">  HTML </span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            
+                            <a href="./index.html" title="View Live" target="_blank" style="text-decoration: none;font-style: italic;font-size: medium;"><i class="fas fa-external-link-alt"></i> View Live </a>
+                            <!-- <a href="#" title="View Code"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <img src="./project-2 img.png" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Text-to-Speech Converter</h3>
+                        <p class="project-desc">Built a responsive Text-to-Speech tool leveraging HTML, CSS, and JavaScript, designed for clear and engaging audio output.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./Text-To-Speech.html" title="View Live" target="_blank" style="text-decoration: none;font-style: italic;font-size: medium;"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <!-- <a href="#" title="View Code"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                    <img src="./project-3 img.png" alt="Project 3" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">GYM-Genius AI </h3>
+                        <p class="project-desc">This AI-powered chatbot suggests personalized workout routines & perfect for users looking for quick, personalized fitness guidance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <!-- <span class="tech-tag">API</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="./GYM-BOT AI.html" title="View Live" target="_blank" style="text-decoration: none;font-style: italic;font-size: medium;"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <!-- <a href="#" title="View Code"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ==================== -->
+
+    <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <img src="./GAME.png" alt="Project 4" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Tic-Tac-Toe</h3>
+                        <p class="project-desc">A responsive, interactive Tic Tac Toe game.The game features turn-based gameplay between two players, real-time win/draw detection!</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <!-- <span class="tech-tag">API</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="./Tic -Tac-Toe Game.html" title="View Live" target="_blank" style="text-decoration: none; font-style: italic;font-size: medium;"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <!-- <a href="#" title="View Code"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+<!-- =============================================== -->
+
+
+<!-- ===================================== -->
+            </div>
+        </div>
+    </section> 
+
+ 
+
+    
+    
+              
+            
+    
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Let's Build Something Amazing Together</h2> <br>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+
+                    <p class="contact-intro contact-typing" id="contact-typing"></p>
+                    <br><br>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <a href="https://www.google.com/maps/place/Buddha+Vihar,+Bhadrak,+Odisha+756100/@21.0559444,86.4974137,17z/data=!4m6!3m5!1s0x3a1c0a012a5465d5:0xc9846b62997a2721!8m2!3d21.0593972!4d86.5034447!16s%2Fg%2F1ptx1mz33!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Bhadrak, Odisha, India</a>
+                            
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:roy862452@gmail.com">roy862452@gmail.com </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+91 8249873663">+91 8249873663</a>
+                        </div>
+                    </div>
+
+<h2>Connect With Me😉</h2>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/8249873663" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://twitter.com/@GaneshPanda34" target="_blank" class="social-icon twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ganesh_panda69" target="_blank" class="social-icon instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/ganeshpanda36" target="_blank" class="social-icon telegram" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+                    <form  action="https://formsubmit.co/roy862452@gmail.com" method="POST" id="contactForm" >
+                        <!-- Add these hidden inputs for FormSubmit -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Optional: redirect after submit -->
+                        <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+                        <h2 class="form-title">Contact Me</h2> <br>
+                        <div class="form-group">
+                            <!-- <span class="input-icon"><i class="fas fa-user"></i></span> -->
+                            <input type="text" class="form-control" id="name" placeholder="e.g., Steve Jobs" name="name" required>
+                            <label for="name">Full Name</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <!-- <span class="input-icon"><i class="fas fa-envelope"></i></span> -->
+                            <input type="email" class="form-control" id="email" placeholder="e.g., name@example.com " name="email" required>
+                            <label for="email">E-mail</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <!-- <span class="input-icon"><i class="fas fa-tag"></i></span> -->
+                            <input type="text" class="form-control" id="subject" placeholder="e.g., Inquiry about your services" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <!-- <span class="input-icon"><i class="fas fa-comment"></i></span> -->
+                            <textarea class="form-control" id="message" placeholder="Please enter your message " name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-spinner" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                        <div class="form-success" style="display:none;">
+                            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ 
+
+    <!-- Footer -->
+    <footer 
+        data-aos="fade-up" 
+        data-aos-duration="1200" 
+        data-aos-easing="ease-in-out-cubic"
+        data-aos-delay="300"
+        data-aos-once="false"
+        style="opacity:0; animation: footerFadeIn 1.2s cubic-bezier(0.23,1,0.32,1) 0.3s forwards; position:relative; overflow:hidden;"
+    >
+        <div id="footer-particles" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <div class="footer-content" style="justify-content: center; gap: 30px;">
+                <!-- Quick Links in the center -->
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <!-- <a href="#projects"><i class="fas fa-project-diagram" style="margin-right:7px;"></i>Projects</a> -->
+                        <a href="#contact">Contact</a>
+                        <a href='./legal.html' target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+                <!-- Social icons on the right -->
+                <div>
+                    <h4>Let's Talk👀</h4>
+                    <div class="footer-social">
+                        <a href="https://wa.me/8249873663" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i> 
+                             <!-- <i class="fa-brands fa-whatsapp"></i> -->
+
+                        </a>
+                        <!-- <a href="https://twitter.com/@GaneshPanda34" target="_blank" class="social-icon twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a> -->
+                        <a href="https://www.instagram.com/ganesh_panda69" target="_blank" class="social-icon instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/ganeshpanda36" target="_blank" class="social-icon telegram" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Animated SVG Wave Divider -->
+            <div style="width:100%;overflow:hidden;line-height:0;">
+                <svg id="footer-wave" viewBox="0 0 1200 80" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+                    <path id="footer-wave-path"
+                        d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z"
+                        fill="url(#footer-gradient)">
+                    </path>
+                    <defs>
+                        <linearGradient id="footer-gradient" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="var(--primary-color)" />
+                            <stop offset="100%" stop-color="var(--accent-color)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="copyright" style="text-align:center; margin-top:18px;">
+                &copy; <span id="footer-year"></span> Ganesh Prasad Panda. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
